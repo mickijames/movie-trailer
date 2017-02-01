@@ -1,9 +1,15 @@
 /* Main Stylesheet */
 
+/* Color Palette */
+$primary-color: cornflowerblue;
+$secondary-color: purple;
+
+
 body {
     background: gold;
 }
 
 h1 {
+    color: $secondary-color;
     text-transform: uppercase;
 }
