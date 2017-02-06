@@ -1,15 +1,6 @@
-/* Main Stylesheet */
+/* Grand Central Station */
 
-/* Color Palette */
-$primary-color: cornflowerblue;
-$secondary-color: purple;
-
-
-body {
-    background: gold;
-}
-
-h1 {
-    color: $secondary-color;
-    text-transform: uppercase;
-}
+@import "global";
+@import "grid";
+@import "typography";
+@import "video";
