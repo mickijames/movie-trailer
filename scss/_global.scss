@@ -1,13 +1,39 @@
 // Global Stylesheet
 
 // Color Palette
-$primary-color: gold;
-$secondary-color: purple;
+$primary-color: #335062;
+$secondary-color: #bb9251;
 
 // Typography
 //Hide for Mobile & Tablet
 article h1 {
     display: none;
+}
+
+body {
+    h1, h2, h3, p, ul {
+        margin: 0;
+    }
+    h1 {
+        color: $primary-color;
+        font-size: 48px;
+        padding-bottom: .25em;
+    }
+    
+    h2 {
+        color: $secondary-color;
+    }
+    
+    h3 {
+        color: #fff79f;
+    }
+
+    p, li {
+        color: #fff;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 1em;
+    }
 }
 
 // Video Player Styling
@@ -17,5 +43,18 @@ video {
 }
 
 .mejs__time-total {
-    background: rgba(241, 15, 15, 0.3);
+    background: $primary-color;
+}
+
+//Body Styling
+body {
+    background: #0b0b0b;
+    width: 98%;
+    margin: auto;
+    
+    article {
+        width: 80%;
+        margin: auto;
+        padding: 2em;
+    }
 }
