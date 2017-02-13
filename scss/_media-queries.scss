@@ -107,6 +107,23 @@
         padding: .5em;
     }
     
+    .summary h1 {
+        display: block;
+        font-size: 70px;
+        
+        .char1, .char6 {
+            font-size: 80px;
+        }
+        
+        .char1 {
+            letter-spacing: -4px;
+        }
+        
+        .char8 {
+            letter-spacing: 4px;
+        }
+    }
+    
     main article {
         min-width: 30%;
         justify-content: center;

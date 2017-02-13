@@ -27,6 +27,44 @@ h1, h2, h3, p, ul, a {
 h1 {
     color: $primary-color;
     text-align: center;
+    
+    .char1 {
+        letter-spacing: -2px;
+    }
+    
+    .char2, .char11 {
+        color: $sub-color;
+    }
+    
+    .char2, .char3, .char4, .char7 {
+        letter-spacing: -1px;
+    }
+    
+    .char3 {
+        color: #fff;
+    }
+    
+    .char1, .char6 {
+        font-size: 60px;
+    }
+    
+    .char4 {
+        color: $heading-color;
+    }
+    
+    .char7 {
+        color: $sub-color;
+    }
+    
+    .char8 {
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    
+    .char9 {
+        letter-spacing: 1px;
+        color: $heading-color;
+    }
 }
 
 a {
