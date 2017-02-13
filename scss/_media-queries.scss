@@ -9,6 +9,7 @@
 
         h1 {
             margin: .5em 0 0 0;
+            font-size: 48px;
         }
 
         a {
@@ -22,8 +23,12 @@
         p, li {
             font-size: 18px;
         }
-    
     }
+        
+    main {
+        justify-content: center;
+    }
+
     
   /* Diagnostic Styling. Delete When Done. */
   body:before {
@@ -36,51 +41,31 @@
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
     
+    header p {
+        display: block;
+        max-width: 80%;
+        margin: .5em auto 0 auto;
+    }
+    
+    .img {
+        display: block;
+    }
+    
+    .summary {
+        display: none;
+    }
+    
     main {
-        padding: 1em;
         display: flex;
-        justify-content: space-between;
         flex-flow: wrap;
-        flex-grow: 1;
         
         article {
-            min-width: 60%;
+            min-width: 40%;
         }
-    }
-    body {
-
-        h1 {
-            color: $primary-color;
-            font-size: 48px;
-            margin: .5em 0 0 0;
-            text-align: center;
+        
+        .tickets {
+            margin: auto;
         }
-
-        a {
-            color: $primary-color;
-            text-decoration: none;
-            font-size: 30px;
-        }
-
-        h2 {
-            color: $heading-color;
-        }
-
-        h3 {
-            color: $sub-color;
-            padding-left: .75em;
-        }
-
-        p, li {
-            color: #fff;
-            font-size: 18px;
-            padding: 0;
-        }
-    
-    }
-    
-    .tickets {
-        min-width: 30%;
     }
     
     section {
@@ -98,18 +83,29 @@
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
     
-    header h1 {
+    header {
         display: none;
     }
     
-    article {
-        margin: 0 auto;
-        padding: 0 2em;
-        width: 40%;
-        
-        h1 {
-            display: block;
-        }
+    img {
+        display: inline;
+        padding: .5em;
+    }
+    
+    .imgs {
+        display: inline;
+    }
+    
+    .summary {
+        display: block;
+        flex: none;
+        max-width: 80%;
+        margin: .5em auto 0 auto;
+    }
+    
+    main article {
+        min-width: 30%;
+        justify-content: center;
     }
     
     section {

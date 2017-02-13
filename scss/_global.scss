@@ -7,18 +7,18 @@ $sub-color: #fff79f;
 
 // Typography
 //Hide for Mobile & Tablet
-article h1 {
+article h1,
+header p, 
+img {
     display: none;
 }
 
 h1, h2, h3, p, ul, a {
-    margin: .5em;
     font-family: "PT Sans", Arial, sans-serif;
 }
 
 h1 {
     color: $primary-color;
-    font-size: 48px;
     text-align: center;
 }
 
@@ -55,15 +55,15 @@ video {
 body {
     background: #0b0b0b;
     width: 98%;
-    margin: 0 auto;
     
     article {
-        margin: 1em auto;
         padding: 0 2em;
         width: 90%;
     }
     
-    main {
-        margin: 0 auto;
+    a {
+        background: #fff;
+        border-radius: 8px;
+        padding: 4px 10px;
     }
 }
