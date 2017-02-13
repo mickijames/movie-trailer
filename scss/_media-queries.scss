@@ -5,6 +5,10 @@
        display: block;
     }
     
+    .summary article {
+        display: none;
+    }
+    
     body {
 
         h1 {
@@ -83,7 +87,7 @@
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
     
-    header {
+    header, .rating {
         display: none;
     }
     
@@ -96,11 +100,11 @@
         display: inline;
     }
     
-    .summary {
+    body .summary {
         display: block;
         flex: none;
-        max-width: 80%;
-        margin: .5em auto 0 auto;
+        max-width: 75%;
+        padding: .5em;
     }
     
     main article {
@@ -112,10 +116,6 @@
         padding-top: 0;
         margin: auto;
         width: 75%;
-    }
-    
-    p {
-        padding: 1em 2em;
     }
     
   /* Diagnostic Styling. Delete When Done. */
