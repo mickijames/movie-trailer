@@ -2,7 +2,8 @@
 
 // Color Palette
 $primary-color: #335062;
-$secondary-color: #bb9251;
+$heading-color: #bb9251;
+$sub-color: #fff79f;
 
 // Typography
 //Hide for Mobile & Tablet
@@ -10,35 +11,34 @@ article h1 {
     display: none;
 }
 
-body {
-    h1, h2, h3, p, ul {
-        margin: 0;
-    }
-    h1 {
-        color: $primary-color;
-        font-size: 48px;
-        padding-bottom: .25em;
-    }
-    
-    h2 {
-        color: $secondary-color;
-    }
-    
-    h3 {
-        color: #fff79f;
-        padding-left: .5em;
-    }
+h1, h2, h3, p, ul, a {
+    margin: .5em;
+    font-family: "PT Sans", Arial, sans-serif;
+}
 
-    p, li {
-        color: #fff;
-        font-size: 12px;
-        line-height: 16px;
-        padding: 0;
-    }
-    
-    p {
-        padding: 1em 2em;
-    }
+h1 {
+    color: $primary-color;
+    font-size: 48px;
+    text-align: center;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+
+h2 {
+    color: $heading-color;
+}
+
+h3 {
+    color: $sub-color;
+}
+
+p, li {
+    color: #fff;
+    padding: 0;
 }
 
 // Video Player Styling
@@ -58,9 +58,9 @@ body {
     margin: 0 auto;
     
     article {
-        margin: 0 auto;
+        margin: 1em auto;
         padding: 0 2em;
-        width: 40%;
+        width: 90%;
     }
     
     main {

@@ -5,6 +5,26 @@
        display: block;
     }
     
+    body {
+
+        h1 {
+            margin: .5em 0 0 0;
+        }
+
+        a {
+            font-size: 30px;
+        }
+        
+        h3 {
+            padding-left: .75em;
+        }
+
+        p, li {
+            font-size: 18px;
+        }
+    
+    }
+    
   /* Diagnostic Styling. Delete When Done. */
   body:before {
        background: yellow;
@@ -17,14 +37,50 @@
 @media screen and (min-width: 48em)  {
     
     main {
-        padding: 2em;
+        padding: 1em;
         display: flex;
         justify-content: space-between;
+        flex-flow: wrap;
+        flex-grow: 1;
+        
+        article {
+            min-width: 60%;
+        }
+    }
+    body {
+
+        h1 {
+            color: $primary-color;
+            font-size: 48px;
+            margin: .5em 0 0 0;
+            text-align: center;
+        }
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: $heading-color;
+        }
+
+        h3 {
+            color: $sub-color;
+            padding-left: .75em;
+        }
+
+        p, li {
+            color: #fff;
+            font-size: 18px;
+            padding: 0;
+        }
+    
     }
     
-    main article,
-    main aside {
-        width: 40%;
+    .tickets {
+        min-width: 30%;
     }
     
     section {
@@ -46,14 +102,24 @@
         display: none;
     }
     
-    article h1 {
-        display: block;
+    article {
+        margin: 0 auto;
+        padding: 0 2em;
+        width: 40%;
+        
+        h1 {
+            display: block;
+        }
     }
     
     section {
         padding-top: 0;
         margin: auto;
         width: 75%;
+    }
+    
+    p {
+        padding: 1em 2em;
     }
     
   /* Diagnostic Styling. Delete When Done. */
