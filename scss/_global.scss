@@ -26,13 +26,18 @@ body {
     
     h3 {
         color: #fff79f;
+        padding-left: .5em;
     }
 
     p, li {
         color: #fff;
         font-size: 12px;
         line-height: 16px;
-        padding: 0 1em;
+        padding: 0;
+    }
+    
+    p {
+        padding: 1em 2em;
     }
 }
 
@@ -50,11 +55,15 @@ video {
 body {
     background: #0b0b0b;
     width: 98%;
-    margin: auto;
+    margin: 0 auto;
     
     article {
-        width: 80%;
-        margin: auto;
-        padding: 2em;
+        margin: 0 auto;
+        padding: 0 2em;
+        width: 40%;
+    }
+    
+    main {
+        margin: 0 auto;
     }
 }
