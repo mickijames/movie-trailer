@@ -2,7 +2,7 @@
 @media screen and (min-width: 20em) { 
 
    
-    .summary h1, .summary p:nth-child(1), .rating, tickets {
+    .summary h1, .summary p:nth-child(1), .rating, body tickets {
         display: none;
     }
     
@@ -52,14 +52,14 @@
         padding: 0 10%;
     }
     
-    tickets {
-        display: block;
-        margin-bottom: 1em;
-    }
-    
     body {
         display: block;
         
+        tickets {
+            display: block;
+            margin-bottom: 1em;
+        }
+    
         main {
             display: flex;
             flex-flow: row wrap;
@@ -104,15 +104,22 @@
         display: none;
     }
     
-    body #tic a { // I can't figure out why this isn't working. I've tried everything I can think of.
+    body tickets { // I can't figure out why this isn't working. I've tried everything I can think of.
         display: none;
     }
     .page main {
-        flex-flow: column;
+        flex-flow: row;
+        
+        .tickets {
+            display: flex;
+        }
         
         .summary {
             display: flex;
-            padding: 0 .5em;
+            flex-flow: column;
+            justify-content: center;
+            padding: 0 15%;
+            max-width: 70%;
             
             p:first-child {
                 display: flex;
@@ -136,15 +143,19 @@
                 }
             }
         }
-
+        
         article {
-            min-width: 30%;
-            justify-content: center;
+            display: flex;
+            
+            img {
+                display: flex;
+            }
+            
+            .imgs:not(.rating) {
+                display: flex;
+            }
         }
 
-        .imgs:not(.rating) {
-            display: flex;
-        }
     }
     
   /* Diagnostic Styling. Delete When Done. */
