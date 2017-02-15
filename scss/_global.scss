@@ -45,7 +45,7 @@ h1 {
     }
     
     .char1, .char6 {
-        font-size: 60px;
+        font-size: 1.2em;
     }
     
     .char4 {
@@ -88,6 +88,7 @@ p, li {
 
 // Video Player Styling
 video {
+    padding: 0 2%;
     max-width: 100%;
     width: 100%;
 }
@@ -99,20 +100,25 @@ video {
 //Body Styling
 body {
     background: #0b0b0b;
-    width: 98%;
     
     article {
-        padding: 0 2em;
-        width: 90%;
+        padding: 0 5%;
     }
     
-    a {
-        background: #fff;
-        border-radius: 8px;
-        padding: 4px 10px;
+    .tickets {
+        
+        a {
+            background: #fff;
+            border-radius: 8px;
+            padding: 4px 10px;
+        }
     }
     
     img {
         border-radius: 16px;
     }
+}
+
+footer {
+    padding: 0 2%;
 }
