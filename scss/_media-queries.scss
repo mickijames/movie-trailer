@@ -13,13 +13,6 @@
             margin: .5em 0 0 0;
             font-size: 3em;
         }
-
-        .tickets{
-            
-            a {
-                font-size: 1.875em;
-            }
-        }
         
         h2, h3 {
             line-height: 50%;
@@ -111,55 +104,46 @@
         display: none;
     }
     
-    .summary p:first-child {
-        display: flex;
+    body #tic a { // I can't figure out why this isn't working. I've tried everything I can think of.
+        display: none;
     }
-    
-
-    
-    body {
+    .page main {
+        flex-flow: column;
         
-        #tic a {
-            display: none;
-        }
-        
-        main {
-            flex-flow: column;
+        .summary {
+            display: flex;
+            padding: 0 .5em;
             
-            .summary {
-                padding: 0 .5em;
+            p:first-child {
+                display: flex;
             }
 
-            section {
-                
-            }
+            h1 {
+                display: flex;
+                font-size: 3.9em;
+                text-align: left;
 
-            article {
-                min-width: 30%;
-                justify-content: center;
+                .char1, .char6 {
+                    font-size: 80px;
+                }
+
+                .char1 {
+                    letter-spacing: -4px;
+                }
+
+                .char8 {
+                    letter-spacing: 4px;
+                }
             }
-            
-            .imgs:not(p) {
-                display: inline;
-            }
         }
-    }
-    
-    .summary h1 {
-        display: flex;
-        font-size: 3.9em;
-        text-align: left;
-        
-        .char1, .char6 {
-            font-size: 80px;
+
+        article {
+            min-width: 30%;
+            justify-content: center;
         }
-        
-        .char1 {
-            letter-spacing: -4px;
-        }
-        
-        .char8 {
-            letter-spacing: 4px;
+
+        .imgs:not(.rating) {
+            display: flex;
         }
     }
     

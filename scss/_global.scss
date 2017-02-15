@@ -32,38 +32,20 @@ h1 {
         letter-spacing: -2px;
     }
     
-    .char2, .char11 {
-        color: $sub-color;
-    }
-    
     .char2, .char3, .char4, .char7 {
         letter-spacing: -1px;
-    }
-    
-    .char3 {
-        color: #fff;
     }
     
     .char1, .char6 {
         font-size: 1.2em;
     }
     
-    .char4 {
-        color: $heading-color;
-    }
-    
-    .char7 {
-        color: $sub-color;
-    }
-    
     .char8 {
         letter-spacing: 3px;
-        color: #fff;
     }
     
     .char9 {
         letter-spacing: 1px;
-        color: $heading-color;
     }
 }
 
@@ -111,6 +93,7 @@ body {
         a {
             background: #fff;
             border-radius: 8px;
+            font-size: 1.875em;
             padding: 4px 10px;
         }
     }
