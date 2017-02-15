@@ -2,7 +2,7 @@
 @media screen and (min-width: 20em) { 
 
    
-    .summary h1, .summary p:nth-child(1), .rating, body > tickets a {
+    .summary h1, .summary p:nth-child(1), .rating, tickets {
         display: none;
     }
     
@@ -14,9 +14,7 @@
             font-size: 3em;
         }
 
-        .tickets, tickets {
-            display: flex;
-            justify-content: center;
+        .tickets{
             
             a {
                 font-size: 1.875em;
@@ -61,7 +59,7 @@
         padding: 0 10%;
     }
     
-    body > tickets a {
+    tickets {
         display: block;
         margin-bottom: 1em;
     }
@@ -106,8 +104,6 @@
        content: "Tablet Size";
   }
 
-}
-
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
     
@@ -119,20 +115,33 @@
         display: flex;
     }
     
-    img {
-        display: inline;
-        padding: .5em;
-    }
-    
-    .imgs {
-        display: inline;
-    }
+
     
     body {
-        display: flex;
-        .summary {
-            display: block;
-            padding: 0 .5em;
+        
+        #tic a {
+            display: none;
+        }
+        
+        main {
+            flex-flow: column;
+            
+            .summary {
+                padding: 0 .5em;
+            }
+
+            section {
+                
+            }
+
+            article {
+                min-width: 30%;
+                justify-content: center;
+            }
+            
+            .imgs:not(p) {
+                display: inline;
+            }
         }
     }
     
@@ -152,17 +161,6 @@
         .char8 {
             letter-spacing: 4px;
         }
-    }
-    
-    main article {
-        min-width: 30%;
-        justify-content: center;
-    }
-    
-    section {
-        padding-top: 0;
-        margin: auto;
-        width: 75%;
     }
     
   /* Diagnostic Styling. Delete When Done. */
