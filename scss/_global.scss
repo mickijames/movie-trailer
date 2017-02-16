@@ -24,30 +24,30 @@ h1, h2, h3, p, ul, a {
     font-family: "PT Sans", Arial, sans-serif;
 }
 
-h1 {
-    color: $primary-color;
-    text-align: center;
-    
-    .char1 {
-        letter-spacing: -2px;
-    }
-    
-    .char2, .char3, .char4, .char7 {
-        letter-spacing: -1px;
-    }
-    
-    .char1, .char6 {
-        font-size: 1.2em;
-    }
-    
-    .char8 {
-        letter-spacing: 3px;
-    }
-    
-    .char9 {
-        letter-spacing: 1px;
-    }
-}
+//h1 {
+//    color: $primary-color;
+//    text-align: center;
+////    
+////    .char1 {
+////        letter-spacing: -2px;
+////    }
+////    
+////    .char2, .char3, .char4, .char7 {
+////        letter-spacing: -1px;
+////    }
+////    
+////    .char1, .char6 {
+////        font-size: 1.2em;
+////    }
+////    
+////    .char8 {
+////        letter-spacing: 3px;
+////    }
+////    
+////    .char9 {
+////        letter-spacing: 1px;
+////    }
+//}
 
 a {
     color: $primary-color;
@@ -82,24 +82,26 @@ video {
 //Body Styling
 body {
     background: #0b0b0b;
+    flex-flow: column;
     
     article {
         padding: 0 5%;
     }
-    
+//    
     .tickets, tickets {
         display: flex;
         justify-content: center;
-        a {
-            background: #fff;
-            border-radius: .5em;
-            font-size: 1.875em;
-            padding: 4px 10px;
-        }
+//        
+////        a {
+////            background: #fff;
+////            border-radius: .5em;
+////            font-size: 1.875em;
+////            padding: 4px 10px;
+////        }
     }
     
-    img {
-        border-radius: 1em;
+//    img {
+//        border-radius: 1em;
     }
 }
 
