@@ -26,6 +26,8 @@ h1, h2, h3, p, ul, a {
 
 h1 {
     color: $primary-color;
+    font-size: 3em;
+    margin: .5em 0 0 0;
     text-align: center;
     
     .char1 {
@@ -81,7 +83,9 @@ video {
 
 //Body Styling
 body {
-    background: #0b0b0b;
+    background: url(../img/background-img.jpg) center #0b0b0b;
+    background-size: cover;
+    
     flex-flow: column;
     
     article {
