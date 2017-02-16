@@ -6,8 +6,17 @@
         display: none;
     }
     
+    
+    .mejs__controls {
+        bottom: .3em;
+    }
+    
     body {
         flex-flow: column;
+        
+        main {
+            padding: .25em 1em;
+        }
         
         h2, h3 {
             line-height: 50%;
@@ -26,12 +35,6 @@
         }
     }
     
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
-    
 }
 
 /* Tablet:  768px = 160em */
@@ -39,6 +42,10 @@
     
     .summary, main article:nth-child(2) {
         display: none;
+    }
+    
+    .mejs__controls {
+        bottom: 1.5em;
     }
     
     header p:nth-child(2) {
@@ -66,6 +73,7 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
+            padding: 1em;
 
             article {
                 min-width: 20em;
@@ -74,6 +82,7 @@
             secondary {
                 display: flex;
                 flex-flow: row;
+                padding: 0 4em;
             }
 
             .rating {
@@ -82,9 +91,8 @@
 
             .img1 {
                 display: flex;
-                height: 23em;
             }
-//            
+            
             .imgs {
                 display: flex;
                 flex-flow: column;
@@ -98,11 +106,6 @@
         padding: 0 1em;
     }
     
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
 }
 
 /* Desktop: 1280px = 80em */
@@ -112,6 +115,10 @@
         display: none;
     }
     
+    .mejs__controls {
+        bottom: 3.5em;
+    }
+    
     body tickets {
         display: none;
     }
@@ -119,15 +126,19 @@
     .page main {
         flex-flow: column;
         
+        secondary {
+            padding: 0;
+        }
+        
         .tickets {
             display: flex;
+            padding: 0 0 1em;
         }
         
         .summary {
             display: flex;
             flex-flow: column;
             padding: 0 15%;
-//            max-width: 70%;
             
             p:first-child {
                 display: flex;
@@ -137,13 +148,14 @@
                 display: block;
                 font-size: 3.5em;
                 text-align: left;
+                margin: 0;
                 
                 .char1, .char6 {
                     font-size: 1.3em;
                 }
 
                 .char1 {
-                    letter-spacing: -4px;
+                    letter-spacing: -3px;
                 }
 
                 .char8 {
@@ -152,23 +164,10 @@
             }
         }
     }
-        
-        article {
-//            display: flex;
-            
-            img {
-                display: flex;
-            }
-            
-//            .imgs:not(.rating) {
-//                display: flex;
-//            }
-        }
     
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
+    // img properties
+    img:not(.logo) {
+        display: inline;
+    }
 
 }
