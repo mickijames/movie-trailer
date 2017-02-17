@@ -168,6 +168,11 @@
     // img properties
     img:not(.logo) {
         display: inline;
+        transition: all 1s;
+    }
+    
+    img:hover {
+        transform: scale(1.75);
     }
 
 }
